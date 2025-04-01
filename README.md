@@ -4,21 +4,45 @@ This project is a machine learning pipeline built to classify drug types based o
 
 ---
 
+## 📊 Dataset Overview
+
+- Contains 200 records of patient data
+- Features:
+  - Age
+  - Sex
+  - Blood Pressure (BP)
+  - Cholesterol
+  - Na-to-K Ratio
+- Target variable: **Drug Type**
+
+---
+
 ## 🧠 Algorithms Implemented
 
-The following models were built, trained, and compared using a shared dataset of 200 records:
+1. **K-Nearest Neighbors (KNN)**
+   - Manhattan distance performed best
+   - Accuracy: ~85%
+2. **Support Vector Machines (SVM)**
+   - Kernel types tested: linear, polynomial, RBF, sigmoid
+   - Best AUC-ROC: ~0.95
+3. **Decision Tree Classifier**
+4. **Random Forest Classifier**
+   - Outperformed Decision Trees in accuracy and generalization
+5. **Naive Bayes Classifier**
+   - Evaluated using accuracy, confusion matrix, ROC-AUC
+6. **Clustering Techniques**
+   - KMeans with Silhouette Score & Elbow Method
+   - Gaussian Mixture Models (GMM)
 
-- ✅ **K-Nearest Neighbors (KNN)**  
-- ✅ **Support Vector Machine (SVM)**  
-- ✅ **Decision Tree & Random Forest**  
-- ✅ **Naive Bayes Classifier**  
-- ✅ **Clustering (K-Means, GMM, PCA)**
+---
 
-Each model was evaluated using:
-- Accuracy
+## 📈 Evaluation Metrics
+
 - Confusion Matrix
-- ROC-AUC
-- Silhouette Score (Clustering)
+- ROC Curve and AUC Score
+- Accuracy, Precision, Recall, F1-score
+- Silhouette Score (for clustering)
+- Elbow Method and PCA (dimensionality reduction)
 
 ---
 
@@ -66,13 +90,7 @@ Each model was evaluated using:
 
 ---
 
-## 👥 Team Members
-
-- Özgür Gümüş  
-- Melis Kamacıoğlu  
-- İlyas Uğur Vural  
-- Özlem Yüksel Bilir  
-- Nihal Diler  
+- Ozgur Gumus
 
 🎓 Advisor: Prof. Dr. Alev Taşkın  
 🏫 Yıldız Technical University – 2022–2023 Fall
